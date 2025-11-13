@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Realitätskompass – Ritual</title>
+
+<link rel="manifest" href="manifest.webmanifest" />
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    padding: 20px;
+    background: #f5f5f5;
+  }
+  h1 { text-align: center; }
+  .card {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 14px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+  }
+  button {
+    width: 100%;
+    background: #2c7a4b;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+</style>
+</head>
+
+<body>
+<h1>Realitätskompass</h1>
+
+<div class="card">
+  <h3>1️⃣ Körper-Check</h3>
+  <p>Bin ich angespannt oder ruhig?</p>
+  <button onclick="saveStep('koerper')">Erledigt ✔️</button>
+</div>
+
+<div class="card">
+  <h3>2️⃣ Gedanken-Check</h3>
+  <p>Denke ich klar – oder im Stressmodus?</p>
+  <button onclick="saveStep('gedanken')">Erledigt ✔️</button>
+</div>
+
+<div class="card">
+  <h3>3️⃣ Klarheitsfrage</h3>
+  <p>Was ist HEUTE wichtig?</p>
+  <button onclick="saveStep('klarheit')">Erledigt ✔️</button>
+</div>
+
+<div class="card">
+  <h3>4️⃣ Realitätstest</h3>
+  <p>Reagiere ich – oder entscheide ich?</p>
+  <button onclick="saveStep('realitaet')">Erledigt ✔️</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+  </html>
